@@ -1,20 +1,20 @@
 console.log('vehicle');
 
 class Engine {
-  constructor(cylinder,piston,) {
+  constructor(cylinder, piston, ) {
     this.cylinder = cylinder;
-    this.heater = heater; 	
+    this.heater = heater;
     this.hood = hood;
-    this.horn = horn;	
-    this.ignition = ignition; 	
+    this.horn = horn;
+    this.ignition = ignition;
     this.alternator = alternator;
   }
 
-  Send_current(){
+  Send_current() {
     console.log(`send current do ${this.alternator}`)
   }
 
-   ingnition(){
+  ingnition() {
     console.log(`${this.ingnition}`)
   }
 
@@ -27,11 +27,22 @@ class Engine {
   }
 }
 
+class bodyWork = {
+  cosntructor(color, doors) {
+    this.color = color,
+      this.doors = doorw,
+  }
+  getColor() {
+    console.log(`the bodywork is ${this.color}`);
+  }
+}
+
 const v8 = new Engine(8);
+const body = new bodyWork('red', 2);
 
 v8.cylinders();
 v8.start();
-
+body.getColor();
 
 /**************************************************************************************/
 /**************************************************************************************/
@@ -65,4 +76,3 @@ const toyota = new Bodywork(8);
 
 toyotav8.Window();
 toyota.start();
-
